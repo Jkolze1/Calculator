@@ -1,0 +1,44 @@
+<!--Stylesheets-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<!--Div class start-->
+<div class="mycalc">
+    <!--Form-->
+	<form name="calculator" id="calculator">
+        <!--Input box-->
+		<input type="text" name="inputwindow" id="inputwindow">
+		<div>
+            <!--Buttons-->
+			<input type="button" id="one" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3;  border-radius: 50%;" value="1" onclick="takeValue(document.getElementById('one').value)">
+			<input type="button" id="two" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3;  border-radius: 50%;" value="2" onclick="takeValue(document.getElementById('two').value)">
+			<input type="button" id="three" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3; border-radius: 50%;" value="3" onclick="takeValue(document.getElementById('three').value)">
+			<input type="button" class="btn btn-default btn-circle" style= "border-radius: 50%;" id="plus" value="+" onclick="takeValue(document.getElementById('plus').value)">
+	    </div>
+	    <div>
+			<input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3; border-radius: 50%;" id="four" value="4" onclick="takeValue(document.getElementById('four').value)">
+			<input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3;  border-radius: 50%;" id="five" value="5" onclick="takeValue(document.getElementById('five').value)">
+			<input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3;  border-radius: 50%;" id="six" value="6" onclick="takeValue(document.getElementById('six').value)">
+			<input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3;  border-radius: 50%;" id="minus" value="-" onclick="takeValue(document.getElementById('minus').value)">
+		</div>
+		<div>
+			<input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3;  border-radius: 50%;" id="seven" value="7" onclick="takeValue(document.getElementById('seven').value)">
+			<input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3;  border-radius: 50%;" id="eight" value="8" onclick="takeValue(document.getElementById('eight').value)">
+			<input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3;  border-radius: 50%;" id="nine" value="9" onclick="takeValue(document.getElementById('nine').value)">
+			<input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3;  border-radius: 50%;" id="by" value="*" onclick="takeValue(document.getElementById('by').value)">
+	    </div>
+	    <div>
+			<input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3; border-radius: 50%;" id="zero" value="0" onclick="takeValue(document.getElementById('zero').value)">
+			<input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3; border-radius: 50%;" id="decimal" value="." onclick="takeValue(document.getElementById('decimal').value)">
+			<input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3;  border-radius: 50%;" id="devide" value="/" onclick="takeValue(document.getElementById('devide').value)">
+			<input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3; border-radius: 50%;" id="percent" value="%" onclick="takeValue(document.getElementById('percent').value)">	
+	    </div>
+	    <div class="results">
+                <div class="row">
+			<button type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3; border-radius: 20%;"id="clear" value="" onclick="clearInput(document.getElementById('clear').value)">Clear</button>
+            <input type="button" class="btn btn-default btn-circle" style= "border: 1px solid #fff; background-color:#89bdd3; color:#e3e3e3;  border-radius: 20%;" id="equal" value="=" onclick="calculateResult()">
+        </div>
+</div>
+    <!--Form end-->
+	</form>	
+    </div>
+    <script src="js/script.js"></script>
